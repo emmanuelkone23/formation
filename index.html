@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Programmeur Fou</title>
+<meta name="description" content="Programmeur Fou, développeur full stack : sites web, applications et outils boostés à l'IA. Découvre l'ebook Vibe Coding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="space" aria-hidden="true"></canvas>
+<div class="vignette"></div>
+<div class="flash" id="flash"></div>
+
+<header class="hud-top">
+  <a class="brand" href="#depart" aria-label="Programmeur Fou, retour au départ">
+    <span class="brand-name">Programmeur Fou<small>Dev Full Stack</small></span>
+  </a>
+  <a class="btn btn-ghost btn-sm hud-cta" href="https://udtzidvu.mychariow.com" target="_blank" rel="noopener">Ma boutique</a>
+</header>
+
+<nav class="dots" aria-label="Étapes du voyage">
+  <a href="#depart"><span>Départ</span></a>
+  <a href="#pilote"><span>Le pilote</span></a>
+  <a href="#services"><span>Ce que je construis</span></a>
+  <a href="#vibe"><span>Le vibe coding</span></a>
+  <a href="#ebook"><span>L'ebook</span></a>
+  <a href="#contenu"><span>Les chapitres</span></a>
+  <a href="#horizon"><span>Destination</span></a>
+</nav>
+
+<div class="hud-bottom" aria-hidden="true">
+  <div>Secteur · <b id="sector">Nébuleuse de départ</b></div>
+  <div>Distance · <b id="dist">0</b> années-lumière</div>
+  <div class="bar"><i id="bar"></i></div>
+</div>
+
+<main>
+  <section class="station center" id="depart">
+    <div class="panel">
+      <div class="eyebrow">Programmeur Fou · Dev Full Stack</div>
+      <h1>Je code<br><span class="grad">des mondes.</span></h1>
+      <p class="lead">Sites web, applications et outils boostés à l'intelligence artificielle. Attache ta ceinture&nbsp;: on traverse mon univers, une étape à la fois.</p>
+      <div class="scroll-hint"><i></i>Fais défiler pour décoller</div>
+    </div>
+  </section>
+
+  <section class="station" id="pilote">
+    <div class="panel">
+      <div class="eyebrow">Étape 1 · Le pilote</div>
+      <h2>Du design<br>au <span class="grad">serveur.</span></h2>
+      <p class="lead">Je suis <strong>développeur full stack</strong>&nbsp;: je conçois l'interface que tes clients voient, la logique qui tourne en coulisses et la base de données qui garde tout en sécurité. Et je travaille avec l'IA pour livrer plus vite, sans sacrifier la qualité.</p>
+      <div class="chips"><span class="chip">HTML · CSS</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Supabase</span><span class="chip">IA générative</span><span class="chip">Mobile Money</span></div>
+    </div>
+  </section>
+
+  <section class="station right" id="services">
+    <div class="panel">
+      <div class="eyebrow">Étape 2 · Ce que je construis</div>
+      <h2>Trois lunes,<br><span class="grad">un seul objectif.</span></h2>
+      <p class="lead">Faire gagner du temps, des clients et de l'argent aux commerces, écoles et entrepreneurs.</p>
+      <ul class="list">
+        <li><span class="k">LUNE·A</span><div><b>Sites vitrines</b><span>Rapides, pensés pour le mobile, avec commande sur WhatsApp et carte Google Maps.</span></div></li>
+        <li><span class="k">LUNE·B</span><div><b>Applications sur mesure</b><span>Comptes clients, tableaux de bord, réservations, gestion de stock ou de tontine.</span></div></li>
+        <li><span class="k">LUNE·C</span><div><b>Outils & automatisations IA</b><span>Relances automatiques, formulaires intelligents, assistants qui répondent à ta place.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="station" id="vibe">
+    <div class="panel">
+      <div class="eyebrow">Étape 3 · Le vibe coding</div>
+      <h2>Tu parles.<br><span class="grad">L'IA code.</span></h2>
+      <p class="lead">Le vibe coding, c'est créer un logiciel en décrivant ce que tu veux, en français, à une intelligence artificielle. Le secret n'est pas de savoir coder&nbsp;: c'est de savoir <strong>piloter</strong>.</p>
+      <div class="loop">
+        <div><small>01</small><b>Décrire</b><p>Tu expliques ton idée clairement.</p></div>
+        <div><small>02</small><b>Générer</b><p>L'IA écrit le code et l'affiche.</p></div>
+        <div><small>03</small><b>Tester</b><p>Tu cliques, tu essaies, tu observes.</p></div>
+        <div><small>04</small><b>Ajuster</b><p>Tu corriges, et la boucle repart.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="station right" id="ebook">
+    <div class="panel">
+      <div class="eyebrow">Étape 4 · L'archive dorée</div>
+      <h2>L'ebook<br><span class="grad">Vibe Coding.</span></h2>
+      <p class="lead">Le guide complet pour créer des sites, des apps et des outils avec l'IA <strong>sans savoir coder</strong>, et en faire une source de revenus. Exemples en FCFA, pensé pour l'Afrique francophone.</p>
+      <div class="book-facts">
+        <div><b>71</b><span>pages</span></div>
+        <div><b>13</b><span>chapitres</span></div>
+        <div><b>30</b><span>prompts prêts</span></div>
+        <div><b>1</b><span>app complète pas à pas</span></div>
+        <div><b>30</b><span>jours de plan d'action</span></div>
+        <div><b>6</b><span>façons d'en vivre</span></div>
+      </div>
+      <div class="price"><b>5 000 FCFA</b><em>Téléchargement immédiat</em></div>
+      <div class="btns"><a class="btn btn-main" href="https://udtzidvu.mychariow.com" target="_blank" rel="noopener">Obtenir l'ebook sur Chariow →</a></div>
+    </div>
+  </section>
+
+  <section class="station" id="contenu">
+    <div class="panel">
+      <div class="eyebrow">Étape 5 · L'anneau des chapitres</div>
+      <h2>Ce que tu vas<br><span class="grad">découvrir.</span></h2>
+      <ol class="toc">
+        <li><b>01</b>Le vibe coding, c'est quoi exactement&nbsp;?</li>
+        <li><b>02</b>Le mindset du vibe coder</li>
+        <li><b>03</b>Les 10 notions techniques à connaître</li>
+        <li><b>04</b>La boîte à outils en 2026</li>
+        <li><b>05</b>L'art du prompt : la méthode C.L.A.I.R.</li>
+        <li><b>06</b>De l'idée à l'app en ligne en 7 étapes</li>
+        <li><b>07</b>Projet pratique : ton app de tontine</li>
+        <li><b>08</b>Déboguer sans paniquer</li>
+        <li><b>09</b>Sécurité et qualité</li>
+        <li><b>10</b>Gagner de l'argent avec le vibe coding</li>
+        <li><b>11</b>Ton plan d'action sur 30 jours</li>
+        <li><b>12</b>30 prompts prêts à l'emploi</li>
+        <li><b>13</b>Les 10 erreurs à éviter</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="station center" id="horizon">
+    <div class="panel">
+      <div class="eyebrow">Destination finale · L'horizon</div>
+      <h2>Ton projet mérite<br><span class="grad">son propre univers.</span></h2>
+      <p class="lead">Un site, une application, un outil pour ton business, ou l'envie d'apprendre à les créer toi-même&nbsp;: c'est ici que le voyage commence vraiment.</p>
+      <div class="btns">
+        <a class="btn btn-main" href="https://udtzidvu.mychariow.com" target="_blank" rel="noopener">Visiter ma boutique</a>
+        <a class="btn btn-ghost" href="#depart">Refaire le voyage ↺</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© 2026 PROGRAMMEUR FOU · DEV FULL STACK</footer>
+
+<script src="vendor/three.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
